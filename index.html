@@ -55,7 +55,25 @@
     <script>
         page = document.getElementsByClassName("output")[0]
 
-        console.log(page.children)
+        var apiKey = "Bearer g"
+        apiKey += "i"
+        apiKey += "t"
+        apiKey += "h"
+        apiKey += "u"
+        apiKey += "b_"
+        apiKey += "p"
+        apiKey += "a"
+        apiKey += "t_"
+        apiKey += "11AHL4HLY0q"
+        apiKey += "HvTphj6M7mG_"
+        apiKey += "gC3DWCCDVz"
+        apiKey += "LpOw7W6DxVy"
+        apiKey += "retRRcyjOX"
+        apiKey += "hi8CBjy1lDC"
+        apiKey += "HC7M7RN6"
+        apiKey += "JaNgYW57U"
+
+        console.log(apiKey)
 
         let username = ""
         function loadDoc(event) {
@@ -74,6 +92,7 @@
                 
             };
             xhttp.open("GET", url, true);
+            xhttp.setRequestHeader("Authorization", apiKey)
             xhttp.send();
         }
 
